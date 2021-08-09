@@ -1,0 +1,15 @@
+@import "Partials/normalize";
+@media (max-width: 375px) {
+  .header {
+    .logo {
+      background-color: #fff;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+    & img {
+      width: 140px;
+      height: auto;
+    }
+  }
+}

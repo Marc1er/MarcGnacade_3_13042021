@@ -338,6 +338,15 @@ template {
   display: none;
 }
 
-body {
-  background-color: #bcbcbc;
+@media (max-width: 375px) {
+  .header .logo {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .header img {
+    width: 140px;
+    height: auto;
+  }
 }/*# sourceMappingURL=Styles.css.map */
