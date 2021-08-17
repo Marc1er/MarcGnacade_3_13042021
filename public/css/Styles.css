@@ -521,4 +521,9 @@ template {
   footer .pieds--de--page li {
     margin-left: 15px;
   }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
 }/*# sourceMappingURL=Styles.css.map */
