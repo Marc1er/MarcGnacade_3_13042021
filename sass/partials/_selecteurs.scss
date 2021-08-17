@@ -1,18 +1,233 @@
-body{
-  background-color: red;
+@media screen and (max-width: 375px){
+
+header{
+  text-align: center;
+
+ .ohmyfood{
+  max-height: 30px;
+  width: auto;
+  margin: 10px auto;
+ }
+
+ nav{
+   background:#F7F9F9;
+   margin-bottom: 50px;
+   
+    .localissation{
+     display:flex;
+     padding: 15px 30%;
+     background-color:#EBEDEF ;
+     border-radius: 0px;
+     background: #EBEDEF;
+     box-shadow: inset 2px 2px 3px #EBEDEF,
+            inset -2px -2px 3px #EBEDEF;
+     
+      
+      input{
+        font-family: 'Roboto' sans-serif;
+        font-size: 1em;
+        border-style: none;
+         background-color:#EBEDEF  ;
+        font-weight: bold;
+       padding-left: 10px;
+      }
+
+      i{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 70px;
+        left: 100px;
+    
+      }
+
+    }
+   
+    .presentation{
+     font-size: 0.8rem;
+     
+     
+      h1{
+      padding: 10px 50px ;
+      font-weight: bold;
+      
+      }
+
+      p{
+      padding: 0px 15px;
+      margin-top:-20px;
+      font-size: 1.2rem;
+      color: grey;
+      }
+
+     .button{
+       display: inline-block;
+       background: linear-gradient(#ff79da, #9356dc);
+       border-radius: 20px;
+       padding:10px 15px;
+       margin-bottom: 40px;
+      color: #fff;
+      font-size: 1rem;
+      transform: scale(1.05);
+         
+      }
+
+    }
+
+ }
+
 }
 
-  header{
-
-    img{
-      width: 140px;
-      height: auto;
-      padding-top: 20px;
-      padding-bottom: 20px;
+.methode{
+  padding: 0px 30px ;
+  font-size: 0.7rem;
+  
+  .methode_pratique{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    
+    
+    .bloc{
+      display: flex;
       text-align: center;
+      background-color:#F7F9F9;
+      margin-bottom: 30px;
+      box-shadow: 10px 5px 5px #F7F9F9;
+      padding: 10px;
+      border-radius: 20px;
+      transform: scale(1.09);
+      transition: all 0.2s ease-in-out;
+      font-size: 0.7rem;
+      border-radius: 20px;
+      background: #F7F9F9;
+      box-shadow:  5px 5px 10px #E5E7E9 ,
+             -5px -5px 10px #ffffff;
+
+      .fas{
+        font-size: 1.1rem;
+        color:#5D6D7E ;
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 15px;
+
+      }
+      p{
+        border: 1px solid #9356dc;
+        padding: 5px 8px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: #9356dc;
+        color: #fff;
+        position:absolute;
+        left: -10px;
+      }
+      
+    }
+
+  }
+}
+
+.restaurants{
+  background-color:#F2F4F4;
+  padding-bottom: 40px;
+
+  h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 20px
+    ;
   }
   
-  
+  .restaurant_Menilmontant{
+    
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      
+
+    .bloc{
+      width: 335px;
+	    height: 280px;
+	    margin:20px;
+	    background-color: #fff;
+	    border-radius: 10px;
+	    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
+      position: inherit;
+      
+      .img{
+        width: 335px;
+        height:200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+      }
+
+      h2{
+        font-size: 1.2rem;
+        padding-left: 10px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      p{
+        position: relative;
+        left: 10px;
+        top: -10px;
+        z-index: 2;
+      }
+
+      i{
+        position: relative;
+        left: 300px;
+        top: -80px;
+        font-size: 1.5rem;
+      }
+
+      & i:hover{
+        background-color: #9356dc;
+      }
+
+      a{
+         text-decoration: none;
+         color: black;
+      }
+    }
+  }
 }
+
+footer{
+  background-color: black;
+  color: #ffffff;
+
+  .ohmyfood{
+    padding-left: 30px;
+    color: #fff;
+    height: 20px;
+  }
+  
+  .pieds--de--page{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+
+    ul{
+      display: flex;
+      justify-content: flex-start;
+      align-content: space-around;
+      list-style-type: none;
+      margin: 2px -40px;
+      font-size: 0.9rem;
+      
+    }
+
+    li{
+      margin-left: 15px;
+    }
+  }
+
  
+}
+} 
 
