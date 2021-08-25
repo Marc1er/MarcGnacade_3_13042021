@@ -342,6 +342,8 @@ header {
 }
 header .logo {
   padding: 1.1rem;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
 header .ohmyfood {
   max-height: 30px;
@@ -391,20 +393,35 @@ header nav .presentation .button {
   color: #fff;
   font-size: 1rem;
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .methode {
+  max-width: 1280px;
   font-size: 0.7rem;
-  margin: 10px;
+  margin: 20px;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .methode {
+    margin: auto;
+  }
 }
 .methode .methode_pratique {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   font-size: 0.8rem;
+}
+@media (min-width: 1024px) {
+  .methode .methode_pratique {
+    flex-direction: row;
+  }
 }
 .methode .methode_pratique .bloc {
   display: flex;
   text-align: center;
+  flex-grow: 1;
   background-color: #F7F9F9;
   margin: 10px;
   box-shadow: 10px 5px 5px #F7F9F9;
@@ -515,10 +532,4 @@ footer .pieds--de--page ul {
 }
 footer .pieds--de--page li {
   margin-left: 15px;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
 }/*# sourceMappingURL=Styles.css.map */
