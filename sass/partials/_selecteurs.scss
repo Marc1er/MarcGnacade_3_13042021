@@ -1,244 +1,212 @@
-header{
+header {
   text-align: center;
 
-  .logo{
+  .logo {
     padding: 1.1rem;
     position: relative;
-    box-shadow: 0 0 .5rem rgba(0,0,0,.25);
-    
-
-             
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   }
 
-  .ohmyfood{
-  max-height: 30px;
-  width: auto;
-  margin: 10px;
+  .ohmyfood {
+    max-height: 30px;
+    width: auto;
+    margin: 10px;
   }
 
-  nav{
-   
-   background:#F7F9F9;
-   margin-bottom: 50px;
-   
-    .localissation{
-     padding: 20px;     
-     background: #EBEDEF;
-     
-     
-     
-      
-      input{
-        font-family: 'Roboto' sans-serif;
+  nav {
+    background: #f7f9f9;
+    margin-bottom: 50px;
+
+    .localissation {
+      padding: 20px;
+      background: #ebedef;
+
+      input {
+        font-family: "Roboto" sans-serif;
         font-size: 1.2rem;
         border-style: none;
-        background-color:#EBEDEF  ;
+        background-color: #ebedef;
         font-weight: bold;
-       
       }
 
-      i{
+      i {
         font-size: 1.2rem;
         margin-left: 110px;
         margin-right: 15px;
         position: relative;
-          
       }
-
-    }
-   
-    .presentation{
-     font-size: 0.8rem;
-     
-     
-      h1{
-      padding: 10px 50px ;
-      font-weight: bold;
-      
-      }
-
-      p{
-      padding: 0px 15px;
-      margin-top:-20px;
-      font-size: 1.2rem;
-      color: grey;
-      }
-
-     .button{
-       display: inline-block;
-       background: linear-gradient(#ff79da, #9356dc);
-       border-radius: 20px;
-       padding:10px 15px;
-       margin-bottom: 40px;
-      color: #fff;
-      font-size: 1rem;
-      transform: scale(1.05);
-      cursor: pointer;
-         
-      }
-
     }
 
- }
+    .presentation {
+      font-size: 0.8rem;
 
+      h1 {
+        padding: 10px 50px;
+        font-weight: bold;
+      }
+
+      p {
+        padding: 0px 15px;
+        margin-top: -20px;
+        font-size: 1.2rem;
+        color: grey;
+      }
+
+      .button {
+        display: inline-block;
+        background: linear-gradient(#ff79da, #9356dc);
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin-bottom: 40px;
+        color: #fff;
+        font-size: 1rem;
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+    }
+  }
 }
 
-.methode{
+.methode {
   max-width: 1280px;
-  
   font-size: 0.7rem;
-  margin:20px;
+  margin: 20px;
   position: relative;
-  @media (min-width:1024px){
+  @media (min-width: 1024px) {
     margin: auto;
   }
- 
-  
-  .methode_pratique{
+
+  .methode_pratique {
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: 0.8rem;
-    @media (min-width:1024px) {
-      
+    @media (min-width: 1024px) {
       flex-direction: row;
     }
-    
-    
-    .bloc{
+
+    .bloc {
       display: flex;
       text-align: center;
       flex-grow: 1;
-      background-color:#F7F9F9;
+      background-color: #f7f9f9;
       margin: 10px;
-      box-shadow: 10px 5px 5px #F7F9F9;
+      box-shadow: 10px 5px 5px #f7f9f9;
       padding: 10px;
       border-radius: 20px;
       font-size: 0.7rem;
       border-radius: 20px;
-      background: #F7F9F9;
+      background: #f7f9f9;
       box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
-      
-      
-        .bloc:hover{
-          background-color: #9356dc;
-        }
 
-      .fas{
-        font-size: 1.1rem;
-        color:#5D6D7E;
-        margin-top: 15px;   
-        margin-right: 15px; 
-        margin-left: 15px; 
-
-        
+      .bloc:hover {
+        background-color: #9356dc;
       }
-      p{
-        
+
+      .fas {
+        font-size: 1.1rem;
+        color: #5d6d7e;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+      p {
         padding: 5px 8px;
         border-radius: 50%;
         background-color: #9356dc;
         color: #fff;
         position: absolute;
         left: 10px;
-              
+        @media (min-width: 1024px) {
+          display: flex;
+        }
       }
-      
     }
-
   }
 }
 
-.restaurants{
-  background-color:#F2F4F4;
-  padding:10px 20px ;
-  
+.restaurants {
+  background-color: #f2f4f4;
+  padding: 10px 20px;
 
-  h1{
+  h1 {
     font-size: 1.5rem;
     font-weight: bold;
     padding-top: 50px;
     padding-left: 30px;
   }
-  
-  .restaurant_Menilmontant{
-    
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      
-      
-      
 
-    .bloc{
+  .restaurant_Menilmontant {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .bloc {
       width: 100%;
-	    height: 280px;
+      height: 280px;
       margin-bottom: 30px;
-	    background-color: #fff;
-	    border-radius: 10px;
+      background-color: #fff;
+      border-radius: 10px;
       position: relative;
-	    
-     
-      
-      .img{
+
+      .img {
         width: 100%;
-        height:200px;
+        height: 200px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         object-fit: cover;
       }
 
-      h2{
+      h2 {
         font-size: 1.2rem;
         padding-left: 10px;
         font-weight: bold;
         text-transform: capitalize;
       }
 
-      p{
+      p {
         position: absolute;
         left: 10px;
         top: 230px;
         z-index: 2;
       }
 
-      i{
+      i {
         position: absolute;
         left: 360px;
         top: 220px;
         font-size: 1.5rem;
-        
       }
 
-      & .fas:hover{
+      & .fas:hover {
         color: #9356dc;
       }
 
-      a{
-         text-decoration: none;
-         color: black;
+      a {
+        text-decoration: none;
+        color: black;
       }
     }
   }
 }
 
-footer{
+footer {
   background-color: black;
   color: #ffffff;
 
-  .ohmyfood{
+  .ohmyfood {
     padding-left: 30px;
     color: #fff;
     height: 20px;
   }
-  
-  .pieds--de--page{
+
+  .pieds--de--page {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     padding: 20px;
 
-    ul{
+    ul {
       display: flex;
       justify-content: flex-start;
       align-content: space-around;
@@ -247,23 +215,8 @@ footer{
       font-size: 0.9rem;
     }
 
-    li{
+    li {
       margin-left: 15px;
     }
   }
-
- 
-    
-
-   
-  
-    
-  
 }
-
-
-
-
-
-
-
