@@ -206,7 +206,9 @@ header {
           display: block;
           z-index: 3;
         }
-
+        & .--invisible {
+          display: none;
+        }
         @media (min-width: 1024px) {
           left: 90%;
         }

@@ -81,8 +81,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -512,8 +511,7 @@ header nav .presentation .button {
   height: 200px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurants .restaurant_Menilmontant .bloc h2 {
   font-size: 1.2rem;
@@ -538,6 +536,9 @@ header nav .presentation .button {
 .restaurants .restaurant_Menilmontant .bloc i .far {
   display: block;
   z-index: 3;
+}
+.restaurants .restaurant_Menilmontant .bloc i .--invisible {
+  display: none;
 }
 @media (min-width: 1024px) {
   .restaurants .restaurant_Menilmontant .bloc i {
@@ -581,4 +582,4 @@ footer .pieds--de--page ul {
 }
 footer .pieds--de--page li {
   margin-left: 15px;
-}/*# sourceMappingURL=Styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
