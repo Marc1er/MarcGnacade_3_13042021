@@ -81,7 +81,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -351,18 +352,18 @@ header .ohmyfood {
   margin: 10px;
 }
 header nav {
-  background: #F7F9F9;
+  background: #f7f9f9;
   margin-bottom: 50px;
 }
 header nav .localissation {
   padding: 20px;
-  background: #EBEDEF;
+  background: #ebedef;
 }
 header nav .localissation input {
   font-family: "Roboto" sans-serif;
   font-size: 1.2rem;
   border-style: none;
-  background-color: #EBEDEF;
+  background-color: #ebedef;
   font-weight: bold;
 }
 header nav .localissation i {
@@ -422,22 +423,27 @@ header nav .presentation .button {
   display: flex;
   text-align: center;
   flex-grow: 1;
-  background-color: #F7F9F9;
+  background-color: #f7f9f9;
   margin: 10px;
-  box-shadow: 10px 5px 5px #F7F9F9;
+  box-shadow: 10px 5px 5px #f7f9f9;
   padding: 10px;
   border-radius: 20px;
   font-size: 0.7rem;
   border-radius: 20px;
-  background: #F7F9F9;
+  background: #f7f9f9;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1024px) {
+  .methode .methode_pratique .bloc {
+    margin: 20px;
+  }
 }
 .methode .methode_pratique .bloc .bloc:hover {
   background-color: #9356dc;
 }
 .methode .methode_pratique .bloc .fas {
   font-size: 1.1rem;
-  color: #5D6D7E;
+  color: #5d6d7e;
   margin-top: 15px;
   margin-right: 15px;
   margin-left: 15px;
@@ -448,11 +454,17 @@ header nav .presentation .button {
   background-color: #9356dc;
   color: #fff;
   position: absolute;
-  left: 10px;
+  left: 5px;
+}
+@media (min-width: 1024px) {
+  .methode .methode_pratique .bloc p {
+    position: relative;
+    left: -65%;
+  }
 }
 
 .restaurants {
-  background-color: #F2F4F4;
+  background-color: #f2f4f4;
   padding: 10px 20px;
 }
 .restaurants h1 {
@@ -466,6 +478,22 @@ header nav .presentation .button {
   justify-content: center;
   flex-direction: column;
 }
+.restaurants .restaurant_Menilmontant .sticker {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+@media (min-width: 1024px) {
+  .restaurants .restaurant_Menilmontant {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .restaurants .restaurant_Menilmontant .bloc {
   width: 100%;
   height: 280px;
@@ -474,37 +502,58 @@ header nav .presentation .button {
   border-radius: 10px;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .restaurants .restaurant_Menilmontant .bloc {
+    width: 45%;
+  }
+}
 .restaurants .restaurant_Menilmontant .bloc .img {
   width: 100%;
   height: 200px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurants .restaurant_Menilmontant .bloc h2 {
   font-size: 1.2rem;
   padding-left: 10px;
   font-weight: bold;
+  color: black;
   text-transform: capitalize;
 }
 .restaurants .restaurant_Menilmontant .bloc p {
   position: absolute;
   left: 10px;
   top: 230px;
+  color: black;
   z-index: 2;
 }
 .restaurants .restaurant_Menilmontant .bloc i {
   position: absolute;
-  left: 360px;
+  left: 90%;
   top: 220px;
   font-size: 1.5rem;
 }
+.restaurants .restaurant_Menilmontant .bloc i .far {
+  display: block;
+  z-index: 3;
+}
+@media (min-width: 1024px) {
+  .restaurants .restaurant_Menilmontant .bloc i {
+    left: 90%;
+  }
+}
+.restaurants .restaurant_Menilmontant .bloc .far:hover {
+  display: none;
+}
 .restaurants .restaurant_Menilmontant .bloc .fas:hover {
+  display: block;
   color: #9356dc;
 }
 .restaurants .restaurant_Menilmontant .bloc a {
   text-decoration: none;
-  color: black;
+  color: grey;
 }
 
 footer {

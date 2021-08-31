@@ -98,6 +98,9 @@ header {
       border-radius: 20px;
       background: #f7f9f9;
       box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+      @media (min-width: 1024px) {
+        margin: 20px;
+      }
 
       .bloc:hover {
         background-color: #9356dc;
@@ -116,9 +119,10 @@ header {
         background-color: #9356dc;
         color: #fff;
         position: absolute;
-        left: 10px;
+        left: 5px;
         @media (min-width: 1024px) {
-          display: flex;
+          position: relative;
+          left: -65%;
         }
       }
     }
@@ -141,6 +145,22 @@ header {
     justify-content: center;
     flex-direction: column;
 
+    .sticker {
+      background-color: #99e2d0;
+      color: #1b6150;
+      padding: 0.5rem;
+      border-radius: 0.125rem;
+      position: absolute;
+      top: 1rem;
+      right: 0.75rem;
+    }
+
+    @media (min-width: 1024px) {
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     .bloc {
       width: 100%;
       height: 280px;
@@ -148,6 +168,10 @@ header {
       background-color: #fff;
       border-radius: 10px;
       position: relative;
+
+      @media (min-width: 1024px) {
+        width: 45%;
+      }
 
       .img {
         width: 100%;
@@ -161,6 +185,7 @@ header {
         font-size: 1.2rem;
         padding-left: 10px;
         font-weight: bold;
+        color: black;
         text-transform: capitalize;
       }
 
@@ -168,23 +193,36 @@ header {
         position: absolute;
         left: 10px;
         top: 230px;
+        color: black;
         z-index: 2;
       }
 
       i {
         position: absolute;
-        left: 360px;
+        left: 90%;
         top: 220px;
         font-size: 1.5rem;
+        & .far {
+          display: block;
+          z-index: 3;
+        }
+
+        @media (min-width: 1024px) {
+          left: 90%;
+        }
+      }
+
+      & .far:hover {
+        display: none;
       }
 
       & .fas:hover {
+        display: block;
         color: #9356dc;
       }
-
       a {
         text-decoration: none;
-        color: black;
+        color: grey;
       }
     }
   }
