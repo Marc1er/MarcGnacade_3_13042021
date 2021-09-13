@@ -318,7 +318,7 @@ footer {
     justify-content: space-between;
 
     .menu-cartes__listes {
-      h2 {
+      .box__title {
         display: block;
         font-size: 1.5em;
         margin-block-start: 0.83em;
@@ -326,6 +326,91 @@ footer {
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         font-weight: bold;
+      }
+    }
+  }
+  .btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #000;
+
+    button {
+      appearance: auto;
+      text-rendering: auto;
+      color: -internal-light-dark(black, white);
+      letter-spacing: normal;
+      word-spacing: normal;
+      line-height: normal;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+      margin: 0em;
+    }
+
+    .btn::before,
+    .btn_like {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .btn::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      background: linear-gradient(0deg, #9356dc, #ff79da);
+    }
+
+    .btn_like {
+      transition-duration: 0.25s;
+      background-color: #f6f6f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      mix-blend-mode: lighten;
+    }
+  }
+
+  .presentation {
+    display: grid;
+
+    .menu-cartes {
+      max-width: 100%;
+      overflow: hidden;
+      padding: 0 1rem;
+
+      .menu-cartes__listes {
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 0.5rem;
+        font-weight: 400;
+
+        h3 {
+          display: block;
+          font-size: 1.17em;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+        }
+      }
+      .menu-cartes__listes::after {
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
       }
     }
   }
