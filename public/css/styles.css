@@ -695,6 +695,7 @@ footer .pieds--de--page li {
 }
 .menu .presentation {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .menu .presentation .menu-cartes {
