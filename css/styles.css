@@ -337,54 +337,58 @@ template {
   display: none;
 }
 
-header {
+body {
+  overflow: hidden;
+  position: relative;
+}
+body header {
   text-align: center;
 }
-header .logo {
+body header .logo {
   padding: 1.1rem;
   position: relative;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
-header .ohmyfood {
+body header .ohmyfood {
   max-height: 30px;
   width: auto;
   margin: 10px;
 }
-header nav {
+body header nav {
   background: #f7f9f9;
   margin-bottom: 50px;
 }
-header nav .localissation {
+body header nav .localissation {
   padding: 20px;
   background: #ebedef;
 }
-header nav .localissation input {
+body header nav .localissation input {
   font-family: "Roboto" sans-serif;
   font-size: 1.2rem;
   border-style: none;
   background-color: #ebedef;
   font-weight: bold;
 }
-header nav .localissation i {
+body header nav .localissation i {
   font-size: 1.2rem;
   margin-left: 110px;
   margin-right: 15px;
   position: relative;
 }
-header nav .presentation {
+body header nav .presentation {
   font-size: 0.8rem;
 }
-header nav .presentation h1 {
+body header nav .presentation h1 {
   padding: 10px 50px;
   font-weight: bold;
 }
-header nav .presentation p {
+body header nav .presentation p {
   padding: 0px 15px;
   margin-top: -20px;
   font-size: 1.2rem;
   color: grey;
 }
-header nav .presentation .button {
+body header nav .presentation .button {
   display: inline-block;
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 20px;
@@ -395,8 +399,7 @@ header nav .presentation .button {
   transform: scale(1.05);
   cursor: pointer;
 }
-
-.methode {
+body .methode {
   max-width: 1280px;
   font-size: 0.7rem;
   margin: 20px;
@@ -404,22 +407,22 @@ header nav .presentation .button {
   position: relative;
 }
 @media (min-width: 1024px) {
-  .methode {
+  body .methode {
     margin: auto;
   }
 }
-.methode .methode_pratique {
+body .methode .methode_pratique {
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-size: 0.8rem;
 }
 @media (min-width: 1024px) {
-  .methode .methode_pratique {
+  body .methode .methode_pratique {
     flex-direction: row;
   }
 }
-.methode .methode_pratique .bloc {
+body .methode .methode_pratique .bloc {
   display: flex;
   text-align: center;
   flex-grow: 1;
@@ -434,21 +437,21 @@ header nav .presentation .button {
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 1024px) {
-  .methode .methode_pratique .bloc {
+  body .methode .methode_pratique .bloc {
     margin: 20px;
   }
 }
-.methode .methode_pratique .bloc .bloc:hover {
+body .methode .methode_pratique .bloc .bloc:hover {
   background-color: #9356dc;
 }
-.methode .methode_pratique .bloc .fas {
+body .methode .methode_pratique .bloc .fas {
   font-size: 1.1rem;
   color: #5d6d7e;
   margin-top: 15px;
   margin-right: 15px;
   margin-left: 15px;
 }
-.methode .methode_pratique .bloc p {
+body .methode .methode_pratique .bloc p {
   padding: 5px 10px;
   border-radius: 50%;
   background-color: #9356dc;
@@ -457,28 +460,27 @@ header nav .presentation .button {
   left: 5px;
 }
 @media (min-width: 1024px) {
-  .methode .methode_pratique .bloc p {
+  body .methode .methode_pratique .bloc p {
     position: relative;
     left: -70%;
   }
 }
-
-.restaurants {
+body .restaurants {
   background-color: #f2f4f4;
   padding: 10px 20px;
 }
-.restaurants h1 {
+body .restaurants h1 {
   font-size: 1.5rem;
   font-weight: bold;
   padding-top: 50px;
   padding-left: 30px;
 }
-.restaurants .restaurant_Menilmontant {
+body .restaurants .restaurant_Menilmontant {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.restaurants .restaurant_Menilmontant .sticker {
+body .restaurants .restaurant_Menilmontant .sticker {
   background-color: #99e2d0;
   color: #1b6150;
   padding: 0.5rem;
@@ -488,13 +490,13 @@ header nav .presentation .button {
   right: 0.75rem;
 }
 @media (min-width: 1024px) {
-  .restaurants .restaurant_Menilmontant {
+  body .restaurants .restaurant_Menilmontant {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-.restaurants .restaurant_Menilmontant .bloc {
+body .restaurants .restaurant_Menilmontant .bloc {
   width: 100%;
   height: 280px;
   margin-bottom: 30px;
@@ -503,77 +505,75 @@ header nav .presentation .button {
   position: relative;
 }
 @media (min-width: 1024px) {
-  .restaurants .restaurant_Menilmontant .bloc {
+  body .restaurants .restaurant_Menilmontant .bloc {
     width: 45%;
   }
 }
-.restaurants .restaurant_Menilmontant .bloc .img {
+body .restaurants .restaurant_Menilmontant .bloc .img {
   width: 100%;
   height: 200px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
 }
-.restaurants .restaurant_Menilmontant .bloc h2 {
+body .restaurants .restaurant_Menilmontant .bloc h2 {
   font-size: 1.2rem;
   padding-left: 10px;
   font-weight: bold;
   color: black;
   text-transform: capitalize;
 }
-.restaurants .restaurant_Menilmontant .bloc p {
+body .restaurants .restaurant_Menilmontant .bloc p {
   position: absolute;
   left: 10px;
   top: 230px;
   color: black;
   z-index: 2;
 }
-.restaurants .restaurant_Menilmontant .bloc i {
+body .restaurants .restaurant_Menilmontant .bloc i {
   position: absolute;
   left: 90%;
   top: 220px;
   font-size: 1.5rem;
 }
-.restaurants .restaurant_Menilmontant .bloc i .far {
+body .restaurants .restaurant_Menilmontant .bloc i .far {
   display: block;
   z-index: 3;
 }
-.restaurants .restaurant_Menilmontant .bloc i .--invisible {
+body .restaurants .restaurant_Menilmontant .bloc i .--invisible {
   display: none;
 }
 @media (min-width: 1024px) {
-  .restaurants .restaurant_Menilmontant .bloc i {
+  body .restaurants .restaurant_Menilmontant .bloc i {
     left: 90%;
   }
 }
-.restaurants .restaurant_Menilmontant .bloc .far:hover {
+body .restaurants .restaurant_Menilmontant .bloc .far:hover {
   display: none;
 }
-.restaurants .restaurant_Menilmontant .bloc .fas:hover {
+body .restaurants .restaurant_Menilmontant .bloc .fas:hover {
   display: block;
   color: #9356dc;
 }
-.restaurants .restaurant_Menilmontant .bloc a {
+body .restaurants .restaurant_Menilmontant .bloc a {
   text-decoration: none;
   color: grey;
 }
-
-footer {
+body footer {
   background-color: black;
   color: #ffffff;
 }
-footer .ohmyfood {
+body footer .ohmyfood {
   padding-left: 30px;
   color: #fff;
   height: 20px;
 }
-footer .pieds--de--page {
+body footer .pieds--de--page {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 20px;
 }
-footer .pieds--de--page ul {
+body footer .pieds--de--page ul {
   display: flex;
   justify-content: flex-start;
   align-content: space-around;
@@ -581,30 +581,28 @@ footer .pieds--de--page ul {
   margin: 2px -50px;
   font-size: 0.9rem;
 }
-footer .pieds--de--page li {
+body footer .pieds--de--page li {
   margin-left: 15px;
 }
-
-.header--pages {
+body .header--pages {
   position: relative;
 }
-
-.header {
+body .header {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
-.header .container {
+body .header .container {
   display: flex;
 }
-.header .lien-logo {
+body .header .lien-logo {
   position: relative;
   left: 300px;
   font-family: Shrikhand, "cursive";
   margin: 0;
   text-align: center;
 }
-.header .lien-logo h1 {
+body .header .lien-logo h1 {
   display: block;
   font-size: 2em;
   margin-block-start: 0.67em;
@@ -613,32 +611,30 @@ footer .pieds--de--page li {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-
-.images {
+body .images {
   max-width: 100%;
   max-height: 32rem;
   width: 100%;
   object-fit: cover;
 }
-
-.menu {
+body .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   z-index: 1000;
   position: relative;
 }
-.menu .container_2 {
+body .menu .container_2 {
   max-width: 1280px;
   margin: auto;
 }
-.menu .menu-box {
+body .menu .menu-box {
   padding: 1rem 2rem 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.menu .menu-box .menu-cartes__listes .box__title {
+body .menu .menu-box .menu-cartes__listes .box__title {
   display: flex;
   font-size: 1.5em;
   margin-block-start: 0.83em;
@@ -647,7 +643,7 @@ footer .pieds--de--page li {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-.menu .btn {
+body .menu .btn {
   height: 2rem;
   width: 2rem;
   background-color: transparent;
@@ -660,7 +656,7 @@ footer .pieds--de--page li {
   position: relative;
   background-color: #000;
 }
-.menu .btn button {
+body .menu .btn button {
   appearance: auto;
   text-rendering: auto;
   color: -internal-light-dark(black, white);
@@ -672,21 +668,21 @@ footer .pieds--de--page li {
   text-shadow: none;
   margin: 0em;
 }
-.menu .btn .btn::before,
-.menu .btn .btn_like {
+body .menu .btn .btn::before,
+body .menu .btn .btn_like {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
-.menu .btn .btn::before {
+body .menu .btn .btn::before {
   opacity: 0;
   transition: 0.5s;
   content: "";
   background: linear-gradient(0deg, #9356dc, #ff79da);
 }
-.menu .btn .btn_like {
+body .menu .btn .btn_like {
   transition-duration: 0.25s;
   background-color: #f6f6f6;
   display: flex;
@@ -694,24 +690,24 @@ footer .pieds--de--page li {
   justify-content: center;
   mix-blend-mode: lighten;
 }
-.menu .presentation {
+body .menu .presentation {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.menu .presentation .menu-cartes {
+body .menu .presentation .menu-cartes {
   max-width: 100%;
   overflow: hidden;
   padding: 0 1rem;
 }
-.menu .presentation .menu-cartes .menu-cartes__listes {
+body .menu .presentation .menu-cartes .menu-cartes__listes {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.5rem;
   font-weight: 400;
 }
-.menu .presentation .menu-cartes .menu-cartes__listes h3 {
+body .menu .presentation .menu-cartes .menu-cartes__listes h3 {
   display: block;
   justify-content: center;
   font-size: 1.17em;
@@ -721,7 +717,7 @@ footer .pieds--de--page li {
   margin-inline-end: 0px;
   z-index: 1000;
 }
-.menu .presentation .menu-cartes .menu-cartes__listes::after {
+body .menu .presentation .menu-cartes .menu-cartes__listes::after {
   content: "";
   width: 3rem;
   height: 0.25rem;
@@ -730,7 +726,7 @@ footer .pieds--de--page li {
   left: 0;
   bottom: 0;
 }
-.menu .box-menu {
+body .menu .box-menu {
   background-color: #fff;
   padding: 1rem;
   display: flex;
@@ -744,7 +740,7 @@ footer .pieds--de--page li {
   animation-fill-mode: both;
   max-width: 100%;
 }
-.menu .box-menu h4 {
+body .menu .box-menu h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -755,7 +751,7 @@ footer .pieds--de--page li {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-.menu .box-menu p {
+body .menu .box-menu p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -765,21 +761,20 @@ footer .pieds--de--page li {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.menu .box-menu strong {
+body .menu .box-menu strong {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5rem;
 }
-
-.button {
+body .button {
   display: flex;
   text-decoration: none;
   justify-content: center;
   padding: 3rem 0;
 }
-.button .click {
+body .button .click {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -792,21 +787,20 @@ footer .pieds--de--page li {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
-
-.lien {
+body .lien {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   max-width: 1280px;
   position: relative;
 }
-.lien span {
+body .lien span {
   color: #fff;
   font-family: Shrikhand, "cursive";
   font-size: 1.2rem;
   margin: 0 0 1rem;
 }
-.lien ul {
+body .lien ul {
   display: flex;
   justify-content: flex-start;
   align-content: space-around;
@@ -814,6 +808,6 @@ footer .pieds--de--page li {
   margin: 2px -50px;
   font-size: 0.9rem;
 }
-.lien ul li {
+body .lien ul li {
   margin-left: 15px;
 }/*# sourceMappingURL=styles.css.map */
