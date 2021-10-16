@@ -1,4 +1,8 @@
-header {
+body{
+  overflow: hidden;
+  position: relative;
+
+  header {
   text-align: center;
 
   .logo {
@@ -245,14 +249,13 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 20px;
-
+    // padding: 20px;*
     ul {
       display: flex;
       justify-content: flex-start;
       align-content: space-around;
       list-style-type: none;
-      margin: 2px -50px;
+      margin: 2px 50px;
       font-size: 0.9rem;
     }
 
@@ -516,3 +519,7 @@ footer {
     }
   }
 }
+
+}
+
+
